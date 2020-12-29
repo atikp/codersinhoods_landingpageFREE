@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+} 
+body {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex ;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  min-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  
+}
+
+.background_wave{
+  position: absolute;
+  top:0;
+  right:-10%;
+  
+
+  
+
+}
+                                    /* NAV Section */
+.nav_list{
+  margin: 0;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+   
+}
+
+.nav_list li {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  margin-left: 1.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav_list li:after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  border-bottom: 2px solid #00ff9a;
+  width: 0;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.nav_list li:hover:after {
+  padding: 0;
+  width: 50%;
+  transition: .3s;
+}
+
+.content {
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  align-items: center; 
+  
+  
+}
+
+.content h2 {
+  font-size: 2.35em;
+  margin: 0;
+  font-weight: 300;
+  
+}
+
+.content h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin: -0.25 0;
+}
+
+                                      /* WHY SECTION */
+
+.why {
+  margin: 100px 0;
+}
+
+
+.languages li {
+  display: flex;
+
+}
+
+.languages li.css {
+  flex-direction: row-reverse;
+}
+
+.image_section {
+  position: relative;
+  color: #fff;
+}
+
+.image_section>h3{
+  margin:0;
+  font-size: 10em;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+}
+
+.overlay {
+  background-color:rgba(0,0,0,0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border-radius: 50% 0 50% 0 ;
+
+  
+
+}
+.image_section>img {
+  height:100%;
+  width:100%;
+  border-radius: 50% 0 50% 0 ;
+  box-shadow:  12px 12px 24px #a9a9a9, 
+               -12px -12px 24px #ffffff;
+}
+
+
+.text_section {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+}
+
+.title  {
+  font-size: 3em;
+  color: #ff0000;
+}
+                                  /*Learn Section*/
+
+.learn {
+  margin: 100px;
+}
+.learn_title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .subjects>li>p {
+   width: 50%;
+    align-items: center;
+ }
