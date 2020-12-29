@@ -160,22 +160,55 @@ main {
                                   /*Learn Section*/
 
 .learn {
-  margin: 100px;
+  background-color: #3b3b3b;
+  position: relative;
+  margin: 100px 0;
+  padding: 50px;
+  overflow: hidden;
+
+}
+.background_code {
+  position: absolute;
+  top:0;
+  min-width: 100vw;
+  left: 0;
 }
 .learn_title {
+  color: #fff;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-radius: 25%;
 }
 
 .subjects {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+.subjects>li {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 50px 10px;
+  border-radius: 15px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(141, 136, 136, 0.2);
+  box-shadow:  7px 7px 14px #161616;
+  backdrop-filter: blur(20px);
+
+}
+.subjects img {
+  border-radius: 5px;
 }
  .subjects>li>p {
-   width: 50%;
+   width: 80%;
     align-items: center;
  }
