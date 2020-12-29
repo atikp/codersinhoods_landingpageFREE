@@ -242,6 +242,7 @@ main {
 
 }
 .animals li {
+  position: relative;
   margin: 15px;
   bottom: 0;
 }
@@ -253,4 +254,34 @@ main {
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+}
+
+.style_overlay {
+  background-color:rgba(0,0,0,0.7);
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  overflow: hidden;
+  transition: 0;
+}
+li:hover .style_overlay{
+  width: 100%;
+  transition: 0.3s ease-in-out;
+ 
+}
+
+li .animalTitle {
+  opacity: 0;
+}
+li:hover .animalTitle {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  opacity: 1;
+  transition-delay: .6s;
+  transition: .6s ease-in-out;
+
 }
