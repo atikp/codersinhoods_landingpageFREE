@@ -13,7 +13,10 @@ main {
   position: relative;
   overflow: hidden;
 }
+ p {
+   font-weight: 100;
 
+ }
 .container {
   width: 90%;
   min-width: 1024px;
@@ -122,6 +125,10 @@ main {
 
 }
 
+.text_section p {
+  font-size: 1.5em;
+}
+
 .overlay {
   background-color:rgba(0,0,0,0.7);
   height: 100%;
@@ -209,9 +216,14 @@ main {
 .subjects img {
   border-radius: 5px;
 }
+
+.subjects h3 {
+  font-size: 2em;
+}
  .subjects>li>p {
-   width: 80%;
-    align-items: center;
+  width: 80%;
+  align-items: center;
+  font-size: 1.25em;
  }
                                   /*Styles Section*/
 
@@ -284,4 +296,52 @@ li:hover .animalTitle {
   transition-delay: .6s;
   transition: .6s ease-in-out;
 
+}
+                              /*Contact Us*/
+
+.footer {
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  border-top: 10px solid #eee;
+  
+}
+
+.footer:before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #F288FE 0.26%, #C95F87 9.96%, #B6028E 30.16%, #53A0FD 51.8%, #6EB6CC 73.52%, #8CCD97 85.57%, #B4EC51 101.26%);
+  transform: translateY(-10px);
+
+}
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin:100px;
+  justify-content: center;
+
+
+}
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+
+.footerSection ul>li img {
+  filter: invert(1);
+  padding-right: 10px;
+}
+
+.footerSection>p{
+  font-size: 1.5em;
 }
